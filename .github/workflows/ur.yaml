@@ -17,8 +17,8 @@ jobs:
       - name: configure aws cli
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          aws-access-key-id: ${{ secrets.mum }}
-          aws-secret-access-key: ${{ secrets.ur }}
+          aws-access-key-id: ${{ secrets.ur }}
+          aws-secret-access-key: ${{ secrets.mum }}
           aws-region: us-east-1
       - name: set up node.js
         uses: actions/setup-node@v2
